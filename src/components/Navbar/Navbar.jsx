@@ -8,25 +8,30 @@ import { useState } from 'react';
 
 const Navbar = () => {
 
-    const [isNavShowing, setIsNavShowing] = useState( false )
+    const [isNavShowing, setIsNavShowing] = useState( false );
 
     const showingNav = () => {
-        setIsNavShowing(!isNavShowing)
-    }
-    
+
+        setIsNavShowing( prev => !prev );
+
+    };
+
     return (
+
         <nav>
+
             <div className="container nav__container">
-                <Link to='/' className='logo' >
+
+                <Link to='/' onClick={() => setIsNavShowing( false )} className='logo' >
                     <img src={Logo} alt="Nav Logo" />
                 </Link>
 
-                <ul className={`nav__links ${isNavShowing ? 'show__nav' : 'hide__Nav'}`}>
+                <ul className={`nav__links ${ isNavShowing ? 'show__nav' : 'hide__Nav' }`}>
                     {
                         links.map( ( { name, path }, index ) => {
                             return (
                                 <li key={index}>
-                                    <NavLink className={({isActive}) => isActive ? 'active-nav' : ''} to={path}>{name}</NavLink>
+                                    <NavLink onClick={showingNav} className={( { isActive } ) => isActive ? 'active-nav' : ''} to={path}>{name}</NavLink>
                                 </li>
                             );
                         } )
@@ -38,9 +43,13 @@ const Navbar = () => {
                         isNavShowing ? <IoMdClose /> : <FaBars />
                     }
                 </button>
+
             </div>
+
         </nav>
+
     );
+
 };
 
 export default Navbar;

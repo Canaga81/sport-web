@@ -4,7 +4,7 @@ nav {
     background: var(--color-primary);
     display: grid;
     place-items: center;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     z-index: 99;
@@ -81,6 +81,7 @@ li {
         right: 0;
         flex-direction: column;
         gap: 0;
+        perspective: 400px;
     }
 
     .active-nav, .active-nav::after {
