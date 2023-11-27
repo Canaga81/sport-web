@@ -1,4 +1,5 @@
 import React from 'react';
+import Values from '../Values';
 
 const SectionHeader = ( { icon, title, className } ) => {
     return (
