@@ -8,6 +8,7 @@ import Plans from './pages/plans';
 import Trainers from './pages/trainers';
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer';
 
 function App () {
 
@@ -29,9 +30,12 @@ function App () {
 
       </Routes>
 
+      <Footer />
+
     </BrowserRouter>
 
   );
+  
 }
 
 export default App;
