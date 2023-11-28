@@ -10,8 +10,8 @@ const Values = () => {
         <section className='values'>
             <div className="container values__container">
                 <div className="values-left">
-                    <div className="values-image">
-                        <img src={Image} alt="values-image" />
+                    <div className="values__image">
+                        <img src={Image} alt="values__image" />
                     </div>
                 </div>
                 <div className="values-right">
