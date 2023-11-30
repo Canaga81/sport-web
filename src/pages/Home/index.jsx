@@ -1,10 +1,9 @@
 import FAQs from '../../components/FAQs';
-import Footer from '../../components/Footer';
 import MainHeader from '../../components/MainHeader';
 import Programs from '../../components/Programs';
 import Testimonials from '../../components/Testimonials';
 import Values from '../../components/Values';
-import './home.css'
+import './home.css';
 
 const Home = () => {
 
@@ -12,7 +11,7 @@ const Home = () => {
     <>
       <MainHeader />
 
-      <Programs /> 
+      <Programs />
 
       <Values />
 
@@ -20,11 +19,10 @@ const Home = () => {
 
       <Testimonials />
 
-      <Footer />
-      
+
     </>
-  )
+  );
 
-}
+};
 
-export default Home
+export default Home;
