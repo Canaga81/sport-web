@@ -187,19 +187,19 @@ export const plans = [
         desc: 'This package is perfect for beginners who need constant help',
         price: 29.99,
         features: [
-            { feature: 'First Feature', available: true },
-            { feature: 'Second Feature', available: true },
-            { feature: 'Third Feature', available: true },
-            { feature: 'Fourth Feature', available: true },
-            { feature: 'Fifth Feature', available: true },
-            { feature: 'Fifth Feature Plus', available: false },
-            { feature: 'Sixth Feature', available: false },
-            { feature: 'Seventh Feature', available: false },
-            { feature: 'Seventh Feature Plus', available: false },
-            { feature: 'Eighth Feature', available: false },
-            { feature: 'Ninth Feature', available: false },
-            { feature: 'Tenth Feature', available: false },
-            { feature: 'Eleventh Feature', available: false }
+            {id:1, feature: 'First Feature', available: true },
+            {id:2, feature: 'Second Feature', available: true },
+            {id:3, feature: 'Third Feature', available: true },
+            {id:4, feature: 'Fourth Feature', available: true },
+            {id:5, feature: 'Fifth Feature', available: true },
+            {id:6, feature: 'Fifth Feature Plus', available: false },
+            {id:7, feature: 'Sixth Feature', available: false },
+            {id:8, feature: 'Seventh Feature', available: false },
+            {id:9, feature: 'Seventh Feature Plus', available: false },
+            {id:10, feature: 'Eighth Feature', available: false },
+            {id:11, feature: 'Ninth Feature', available: false },
+            {id:12, feature: 'Tenth Feature', available: false },
+            {id:13, feature: 'Eleventh Feature', available: false }
         ]
     },
     {

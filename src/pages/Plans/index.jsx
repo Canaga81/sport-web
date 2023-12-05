@@ -17,6 +17,7 @@ const Plans = () => {
         <div className="container plans__container">
           {
             plans.map( ( { id, name, desc, price, features } ) => {
+              console.log(id);
               return (
                 <Card className='plan' key={id}>
                   <h3>{name}</h3>
@@ -24,9 +25,9 @@ const Plans = () => {
                   <h1>{`$${ price }`}</h1>
                   <h4>Features</h4>
                     {
-                      features.map( ( { feature, available, index } ) => {
+                      features.map( ( { feature, available, index }, idx ) => {
                         return (
-                          <p key={index} className={!available ? 'disabled' : ''}>{feature}</p>
+                          <p key={idx} className={!available ? 'disabled' : ''}>{feature}</p>
                         )
                       } )
                   }
